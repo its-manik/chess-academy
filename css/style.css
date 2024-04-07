@@ -728,7 +728,7 @@ footer {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1550px) {
   #whyChooseUs .container {
     width: 95vw;
   }
