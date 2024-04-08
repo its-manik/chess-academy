@@ -3,14 +3,18 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("sticky", window.scrollY > 0);
 });
 
-const btn = document.querySelector(".book");
+const btn = document.querySelectorAll(".book");
 const modal = document.querySelector(".popupForm");
 const xMark = document.querySelector(".fa-xmark");
 
 
-btn.addEventListener("click", function(){
-modal.classList.add("active");
+btn.forEach((button) => {
+  button.addEventListener("click", function(){
+    modal.classList.add("active");
+    })
 })
+
+
 
 xMark.addEventListener("click", function(){
 modal.classList.remove("active");
