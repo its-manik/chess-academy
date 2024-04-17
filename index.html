@@ -11,34 +11,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="shortcut icon" href="./images/cm_fav.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="popupForm">
-      <from class="form">
-        <i class="fa-solid fa-xmark"></i>
-        <h3>BOOK A DEMO</h3>
-        <input type="text" placeholder="Parents Name" />
-        <input type="text" placeholder="Child Name" />
-        <input type="text" placeholder="Phone Number" />
-        <button type="submit">Submit</button>
-      </from>
-    </div>
-
     <header>
       <div class="container">
         <nav class="my-nav">
           <input type="checkbox" id="nav-check" />
           <div class="logo">
-            <img src="./images/logo.png" alt="" />
+            <a href="#"><h2><span>D</span>ev S</h2>
+              <span>Web Development & Design</span></a>
           </div>
           <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="./courses.html">Courses</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><button class="book">BOOK A DEMO</button></li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#portfolio">My Portfolio</a></li>
+            <li><a href="#getInTouch" class="book">Get In Touch</a></li>
           </ul>
 
           <div class="nav-btn">
@@ -56,205 +43,69 @@
       <div class="container">
         <div class="heroInner">
           <div class="heroContent">
-            <h1>Your Journey to Grandmaster Begins Here.</h1>
+            <h1>
+              Hi! My name is Sensee Jay Freelance Web Developer & Designer
+            </h1>
             <p>
-              Unlock Your Chess Potential with Chessmatics Elevate your chess
-              skills with professional trainers
+              Based in Minneapolis, Minnesota I craft beautiful digital
+              experiences.<br />
+              With a blend of creativity and functionality, I specialized in
+              creating websites <br />
+              and design services for individuals and small business. My designs
+              are high quality, user friendly and affordable. Let me elevate
+              your online presence and drive results.
             </p>
             <button class="book">BOOK A DEMO</button>
           </div>
           <div class="heroImage">
+            <img src="./images/hero.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="getInTouch">
+      <div class="container">
+        <div class="contactWrapper">
+          <div class="contactLeft">
+            <h2>
+              Leave me a line or two about your project and I will get back
+            </h2>
+            <p>
+              "I am the master of my fate and I am the captain of my boat. While
+              ups and downs are a part of everyone's journey, how you face it
+              makes you the person or artiste you are." -Jubin Nautiyal
+            </p>
+          </div>
+          <div class="contactRight">
+            <div class="contactForm">
+              <form class="mainform">
+                <input type="text" placeholder="Name" name="name" id="name" />
+                <input type="text" placeholder="Email" name="email" id="email" />
+                <textarea placeholder="Message" rows="8" name="message" id="message"></textarea>
+                <button type="submit" onclick="sendMail()">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container">
+        <div class="heading">
+          <h2><span>Portfolio</span></h2>
+        </div>
+
+        <div class="portfolioGrid">
+          <div class="portfolioBox">
+            <img src="./images/kenny-eliason-y_6rqStQBYQ-unsplash.jpg" alt="" />
+          </div>
+          <div class="portfolioBox">
+            <img src="./images/clay-banks-ajFZ2q_CjvQ-unsplash.jpg" alt="" />
+          </div>
+          <div class="portfolioBox">
             <img src="./images/kid-playing-chess-with-father.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="levels">
-      <div class="container">
-        <div class="levelsContent">
-          <div class="levelsLeft">
-            <h2>All you need to attend the Chess class</h2>
-            <p>
-              A device: <i class="fa-solid fa-laptop"></i> Laptop |
-              <i class="fa-solid fa-desktop"></i> Desktop |
-              <i class="fa-solid fa-tablet-screen-button"></i> Tablet - Good
-              internet connection
-            </p>
-          </div>
-          <div class="levelsRight">
-            <div class="levelBox">
-              <div class="levelBadge">
-                <i class="fa-solid fa-chess-pawn"></i>
-              </div>
-              <div>
-                <h4>Beginner</h4>
-                <p>
-                  Acquire a solid foundation in chess by understanding how each
-                  piece moves and mastering the fundamental rules of the game.
-                </p>
-              </div>
-            </div>
-            <div class="levelBox">
-              <div class="levelBadge">
-                <i class="fa-solid fa-chess-rook"></i>
-              </div>
-              <div>
-                <h4>Intermediate</h4>
-                <p>
-                  Delve into basic tactics such as forks and pins. Explore
-                  elementary checkmate patterns to enhance your strategic
-                  thinking.
-                </p>
-              </div>
-            </div>
-            <div class="levelBox">
-              <div class="levelBadge">
-                <i class="fa-solid fa-chess-knight"></i>
-              </div>
-              <div>
-                <h4>Advanced</h4>
-                <p>
-                  Take a deeper dive into chess strategy. Improve your
-                  calculation skills by studying more advanced tactics.
-                  Familiarize yourself with common endgame theories.
-                </p>
-              </div>
-            </div>
-            <div class="levelBox">
-              <div class="levelBadge">
-                <i class="fa-solid fa-chess-king"></i>
-              </div>
-              <div>
-                <h4>Master</h4>
-                <p>
-                  Aspire to tournament success! Focus on opening theory, analyse
-                  Grandmaster games, and elevate your strategic thinking.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="whyChooseUs">
-      <div class="container">
-        <div class="heading">
-          <h2>Why Choose <span>Chessmatics</span></h2>
-        </div>
-
-        <div class="chooseGrid">
-          <div class="chooseBox">
-            <div class="chooseBadge">1</div>
-            <p>Internationally FIDE-rated chess coaches</p>
-          </div>
-          <div class="chooseBox">
-            <div class="chooseBadge">2</div>
-            <p>Thoughtfully designed syllabus</p>
-          </div>
-          <div class="chooseBox">
-            <div class="chooseBadge">3</div>
-            <p>Tournament support and guidance</p>
-          </div>
-          <div class="chooseBox">
-            <div class="chooseBadge">4</div>
-            <p>
-              Personalized coaching tailored to individual strengths and
-              weaknesses
-            </p>
-          </div>
-          <div class="chooseBox">
-            <div class="chooseBadge">5</div>
-            <p class="courseDetails">
-              Continuous evaluation and feedback to ensure progress and growth.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="courses">
-      <div class="container">
-        <div class="heading">
-          <h2>Pick A Course To Get Started</h2>
-        </div>
-
-        <div class="courseGrid">
-          <div class="courseBox">
-            <div class="courseImage">
-              <img
-                src="./images/kenny-eliason-y_6rqStQBYQ-unsplash.jpg"
-                alt="course image"
-              />
-            </div>
-            <div class="courseContent">
-              <h3>ONLINE 1-on-1 CLASS</h3>
-              <ul class="courseDetails">
-                <li>Frequency: Twice a week</li>
-                <li>Course Duration: Tailored to students' pace</li>
-                <li>Age Group: 5 -15 years</li>
-                <li>Class Duration: 45 Minutes</li>
-                <li>Platform: Live Online Sessions via Zoom</li>
-                <li>Personalized and Undivided Attention from Coach</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="courseBox">
-            <div class="courseImage">
-              <img src="./images/course2.jpg" alt="course image" />
-            </div>
-            <div class="courseContent">
-              <h3>ONLINE GROUP CLASS</h3>
-              <ul class="courseDetails">
-                <li>Frequency: Twice a week</li>
-                <li>Age Group: 5 to 15 years</li>
-                <li>Class Duration: 45 Minutes</li>
-                <li>Format: Live Online Sessions via Zoom</li>
-                <li>Interactive and Informative Sessions</li>
-                <li>Interactive and Informative Sessions</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="advantage">
-      <div class="container">
-        <div class="heading">
-          <h2>Advantages</h2>
-        </div>
-
-        <div class="advantageGrid">
-          <div class="advantageBox">
-            <i class="fa-solid fa-cubes-stacked"></i>
-            <h3>Sharpens critical thinking</h3>
-          </div>
-          <div class="advantageBox">
-            <i class="fa-solid fa-bolt"></i>
-            <h3>Boosts concentration</h3>
-          </div>
-          <div class="advantageBox">
-            <i class="fa-regular fa-lightbulb"></i>
-            <h3>Enhances strategic planning</h3>
-          </div>
-          <div class="advantageBox">
-            <i class="fa-solid fa-lightbulb"></i>
-            <h3>Develops creativity</h3>
-          </div>
-          <div class="advantageBox">
-            <i class="fa-solid fa-venus-double"></i>
-            <h3>Builds patience and perseverance</h3>
-          </div>
-          <div class="advantageBox">
-            <i class="fa-solid fa-chart-line"></i>
-            <h3>Improves memory and cognition</h3>
-          </div>
-          <div class="advantageBox">
-            <i class="fa-solid fa-link"></i>
-            <h3>Fosters social skills</h3>
           </div>
         </div>
       </div>
@@ -262,45 +113,34 @@
 
     <footer>
       <div class="container">
-        <div class="footerTop">
-          <div class="footerAbout">
-            <h5>About Chessmatics</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus optio natus voluptatibus aut, pariatur aliquid debitis
-              exercitationem? Exercitationem, earum accusamus?
-            </p>
+        <div class="mainFooter">
+          <div class="fsocial">
+            <a href="mailto:senseejangaba@gmail.com"
+              ><i class="fa-sharp fa-regular fa-envelope"></i
+            ></a>
+            <a href="https://github.com/Sjangaba/html.portfolio"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href=""> <i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
           </div>
-          <div class="footerLinks">
-            <h5>Usefull Links</h5>
-            <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Courses</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms and Conditions</a></li>
-              <li><a href="#">Refund and Cancellation Policy</a></li>
-            </ul>
-          </div>
-          <div class="footerContact">
-            <h5>Chessmatics Academy</h5>
-            <div>
-              <span><i class="fa-solid fa-phone"></i></span>
-              <span>+91234578964</span>
-            </div>
-            <div>
-              <span> <i class="fa-regular fa-envelope"></i> </span>
-              <span>info@chessmatics.com</span>
-            </div>
-          </div>
-        </div>
-        <div class="foooterBottom">
-          Copyright chessmatics Education Private Limited © 2024. All Rights
-          Reserved
+          <div class="ftext">2024 design by Sense...</div>
+          <div class="backtotop"><a href="#hero">Back To Top</a></div>
         </div>
       </div>
     </footer>
 
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "_sPY9Cjw-xnbeDrpq",
+        });
+      })();
+    </script>
     <script src="./js/script.js"></script>
   </body>
 </html>

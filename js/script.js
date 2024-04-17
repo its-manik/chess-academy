@@ -3,19 +3,30 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("sticky", window.scrollY > 0);
 });
 
-const btn = document.querySelectorAll(".book");
-const modal = document.querySelector(".popupForm");
-const xMark = document.querySelector(".fa-xmark");
-
-
-btn.forEach((button) => {
-  button.addEventListener("click", function(){
-    modal.classList.add("active");
-    })
-})
 
 
 
-xMark.addEventListener("click", function(){
-modal.classList.remove("active");
-})
+const name = document.querySelector("#name");
+const email = document.querySelector("#email");
+const message = document.querySelector("#message");
+
+function sendMail() {
+  let params = {
+    name,
+    email,
+    message,
+  };
+
+  if (name.value === "" && email.value === "") {
+    alert("Input required fields!");
+  } else {
+    emailjs.send("service_37hvm5c", "template_ra7m37i", params).then(
+      (response) => {
+        console.log("I got your message!");
+      },
+      (error) => {
+        console.log("FAILED...");
+      }
+    );
+  }
+}
